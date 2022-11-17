@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		.stars{
+			width: 100px;
+			height: 100px;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			display: inline-block;
+			background-size: contain;
+			background-image: url(https://emojipedia-us.s3.amazonaws.com/source/skype/289/star_2b50.png);
+
+		}
+
+		.stars:hover{
+
+			background-image: url(https://emojipedia-us.s3.amazonaws.com/source/skype/289/star_2b50.png;)
+			}
+
+	</style>
+</head>
+<body>
+
+<!-- 
+	<div id="skype" class = "stars">
+	</div>
+
+	<div id=" " class = "stars">
+	</div>
+
+ -->
+
+<script type="text/javascript">
+	let counter = 0
+
+	function makeStar(){
+		counter = counter +1
+		
+		let star = document.createElement("div");
+		
+		document.body.appendChild(star);
+		
+		star.classList.add("stars");
+
+		star.innerText = counter;
+		
+			}
+
+		setInterval(makeStar, 100)
+</script>
+
+</body>
+</html>
