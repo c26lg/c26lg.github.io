@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	<style type="text/css">
+		
+body{
+
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #E9D3FF;
+
+	}
+	div{
+
+		position: absolute;
+		transform: translate(-50%, -50%);
+		height: 35px;
+		width: 35px;
+		border-radius: 50%;
+		border: 2px solid black;
+	}
+
+
+
+	</style>
+</head>
+<body>
+
+<div id="circle"></div>
+<script type="text/javascript">
+	
+	document.addEventListener ('mousemove',function(e){
+
+			let body = document.querySelector('body');
+			let circle = document.getElementById('circle')
+			let left = e.offsetX;
+  			let top = e.offsetY;
+  			circle.style.left = left + 'px';
+  			circle.style.top = top + 'px';
+	
+	});
+	
+</script>
+
+</body>
+</html>

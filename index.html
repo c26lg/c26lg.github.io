@@ -3,6 +3,7 @@
 <head>
 
 	<style type="text/css">
+		
 		#menu{
 			width: 100%;
 			height: 100px;
@@ -12,10 +13,9 @@
 	body{
 		margin: 0px;
 		height: 100%;
-		/*background-image: url(https://i.pinimg.com/736x/c9/32/77/c9327729dcba78fadd30fb0fa31e2723.jpg);*/
-		
-		background-repeat: no-repeat;
+		background-color: seashell;
 		background-size: cover;
+
 
 
 	}
@@ -42,34 +42,88 @@
 		opacity: 4.0;
 	}
 
+
 	a{
-		font-family: serif;
+		font-family:serif ;
 		text-decoration: none;
 		text-align: center;
-		color: black ;
+		color: black;
 	}
+
+
+	#aboutme{
+		margin: 50px;
+		width:400px;
+		height:500px;
+		background-color: saddlebrown;
+
+
+}
+
+	#journal{
+		margin: 50px;
+		width:400px;
+		height:500px;
+		background-color: saddlebrown;
+	}
+
+	#projects{
+		margin: 50px;
+		width:400px;
+		height:500px;
+		background-color: saddlebrown;
+	}
+
+
+	
+
+
+
 
 </style>
 
 </head>
 <body>
 
+<script type="text/javascript">
+	
+	alert("Hello World!!!");
+		var defaultName = "JavaScript";
+		function sayHello(name){
+			if (name === null) {
+				alert ("Hello," + defaultName +'!');
+			}else{
+				alert ("Hello," + name + '!');
+			}
+
+		}
+</script>
+ 
+
 	<div id="menu">
 
 <a href= "projects.html">
 <div class="button">
+<div id="projects">
+</div>
+
  Projects 
 </div>
+
 </a>
 
 <a href= "journal.html">
 <div class="button">
+<div id= "journal">
+</div>
+
 Journal
 </div>
 </a>
 
 <a href= "aboutme.html">
 <div class="button">
+<div id=aboutme></div>
 About Me
 </div>
 </a>

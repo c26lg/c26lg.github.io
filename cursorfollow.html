@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title></title>
+<style>
+
+#circle{
+  width: 80px;
+  height: 80px;
+  border: 1px solid #3c2946;
+  position: fixed;
+  border-radius:50%;
+}
+
+</style>
+</head>
+
+<body>
+<div id="circle"></div> 
+
+<script type="text/javascript">
+	
+	var mouseX=window.innerWidth/2,
+    mouseY=window.innerHeight/2;
+
+    var circle = { 
+     el:$(‘#circle’),
+     x:window.innerWidth/2, 
+     y:window.innerHeight/2, 
+     w:80, 
+     h:80, 
+     update:function(){
+                   l = this.x-this.w/2; 
+                   t = this.y-this.h/2; 
+                   this.el.css({ 
+                            ‘transform’:
+                            ’translate3d(‘+l+’px,‘+t+’px, 0)’ }); 
+                           }
+                           
+}
+
+</script>
+
+</body>
+</html>
