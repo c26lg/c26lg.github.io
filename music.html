@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+
+	<style type="text/css">
+		
+	</style>	
 
 </head>
 <body>
 
 
-	
+	<audio id="audio" src="pink-white.mp3"></audio>
+
 	
 	<script type="text/javascript">
 		
-		let counter = 0;
+		 var audio = document.getElementById('audio');
+
+		let counter = 0
 
 		document.addEventListener("click", function(){
-			
+
 			counter = counter +1;
 
 			console.log(counter)
 
-			1+(counter + 2) = 1{
+				if (counter%2==1){
+					document.body.style.backgroundColor = "white";
+					audio.play()
+				}
 
-				document.body.style.backgroundImage = "url"
-				
-				song.play()}
+				else if (counter%2==0){
+					document.body.style.backgroundColor = "pink";
+					audio.pause() 
+				}			
 
 
-
-			
-			
-			}
+	})
 
 	</script>
 </body>
