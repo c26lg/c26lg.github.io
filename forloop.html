@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+<style type="text/css">
+	.noses{
+		width: 100px;
+		height: 100px;
+		margin: 3px;
+		display: inline-block;
+		background-image: url(https://leitesculinaria.com/wp-content/uploads/2021/10/classic-vanilla-cupcakes-1.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+
+	}
+</style>
+
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		
+function makeDivs (placeholder){
+	var box = document.createElement("div");
+	document.body.appendChild(box)
+	box.classList.add('noses');
+	box.innerText= placeholder
+}	
+
+for (var i=1; i<1001;i=i+1)
+	{makeDivs(i)}
+	</script>
+
+</body>
+</html>

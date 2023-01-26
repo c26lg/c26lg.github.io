@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	<style type="text/css">
+		
+		body{
+			background-color: rgb(555, 70, 365);
+		}
+
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+		document.addEventListener('mousemove',
+		function color(event){
+	
+	var r = Math.round(Math.random()* 255)
+
+	var g = Math.round(Math.random()*255)
+
+	var b = Math.round(Math.random()*255)
+
+	document.body.style.backgroundColor = "rgb(" + r + ","+ g +","+ b +")"
+
+		})
+
+	</script>
+</body>
+</html>
