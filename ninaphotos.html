@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+
+	<style type="text/css">
+		
+		body{
+			width: 100%;
+			height: 100%;
+			background-color: lightpink;
+
+
+		}
+
+		#heart{
+			width: 500px;
+			height: 500px;
+			border: 1px solid black;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-color: seashell;
+
+		}
+
+		#pictures{
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+
+<center>
+	<center><div id = "heart"></div></center>
+</center>
+
+
+<audio id="audio" src="happy-birthday-to-you.mp3"></audio>
+		<script type="text/javascript">
+
+		 var audio = document.getElementById('audio');
+
+		let counter = 0
+
+		document.addEventListener("click", function(){
+
+			counter = counter +1;
+
+			console.log(counter)
+
+				if (counter%2==1){
+					document.body.style.backgroundColor = "white";
+					audio.play()
+				}
+
+				else if (counter%2==0){
+					document.body.style.backgroundColor = "pink";
+					audio.pause() 
+				}			
+
+
+	})
+	
+	var pictures = ["url(meAndSis1.jpg)", "url(IMG_0134.jpg)", "url(IMG_0547.JPG)", "url(IMG_5537.JPG)", "url(IMG_4075.JPG)", "url(IMG_2513.JPG", "url(IMG_4076.JPG)", "url(IMG_6797.JPG", "url(IMG_4552.JPG", "url(", "", "", "", "", "", "", "", ""]
+		document.addEventListener("click", function(){
+		
+		var random = Math.floor(Math.random()*13)
+	console.log(random)
+	heart.style.backgroundImage = pictures[random]
+})
+			
+
+</script>
+</body>
+</html>
