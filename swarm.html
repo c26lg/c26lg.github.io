@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+<style type="text/css">
+	.bug{
+		width: 100px;
+		height: 100px;
+		background-image: url(https://123sonography.com/sites/default/files/styles/article_image/public/image/images/us-animal-challenge-butterfly.jpeg?itok=FnZfpAAm);
+		position: absolute;
+
+	}
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+	function bugs (){
+		var bug = document.createElement("div");
+		document.body.appendChild(bug);
+		bug.classList.add("bug");
+
+
+
+	function move (){
+	 bug.style.left = Math.random()*1000+"px";
+	 bug.style.top = Math.random()*1000+"px";
+
+	}
+
+	for (var i = 0; i<100; i=i+1){
+		bugs()
+
+		setInterval(move,500)
+	}
+</script>
+
+</body>
+</html>
