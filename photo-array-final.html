@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+	
+
+	<title>photo generator</title>
+	<style type="text/css">
+		
+		#text{
+			font-size: 75px;
+		}
+
+		p{
+			font-family: 'Baloo 2', cursive;
+
+			color: whitesmoke;
+			text-align: center;
+			font-size: 50px;
+
+		}
+
+		body{
+			background-color: lavender;
+		}
+		#square{
+			width: 500px;
+			height: 500px;
+			position: absolute;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<p> Some of my favorite pictures of my family, friends, and me!!</p>
+		<div id="text"></div>
+		<div id="square" style="background-image: url(./photo-array/cruise.jpg);"></div>
+	</center>
+
+	<script type="text/javascript">
+		var artwork = ["cruise.jpg", "exercise.jpg", "gradpic.jpg", "knicks.JPG", "luckyball.jpg", "meanddad.JPG", "meandmom.jpg", "mehelaarchday.JPG", "nina.jpg", "nyle.jpg", "pinkshirt.jpg", "school.jpg", "scream.JPG", "skirt.jpg", "sledding.jpg", "splashmtn.jpg", "family.jpg", "parents.jpg", "Facebook.jpg","friends.jpg", "purple.jpg"]
+
+			document.addEventListener("click", function(){
+				
+				var number = Math.round(Math.random()*artwork.length)
+				console.log(number)
+
+				square.style.backgroundImage = "url("+artwork[number]+")";
+
+
+			})
+	</script>
+	<div id="forest-ext-shadow-host">
+		
+		<head></head>
+		<div id="root"></div>
+	</div>
+
+</body>
+</html>

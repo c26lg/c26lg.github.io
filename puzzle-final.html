@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+	
+	<title></title>
+		<style type="text/css">
+			
+	#flower1{
+		z-index:1;
+		width: 175px;
+		height: 175px;
+		border: 1px solid black;
+		position: absolute;
+		left: 50%;
+		top: 150px;
+
+	}
+
+	#flower2{
+		z-index:1;
+		width: 175px;
+		height: 175px;
+		border: 1px solid black;
+		position: absolute;
+		right: 50%;
+		top: 150px;
+
+	}
+	#flower3{
+		z-index:1;
+	width: 175px;
+		height: 175px;
+		border: 1px solid black;
+		position: absolute;
+		right: 50%;
+		top: 325px;
+
+	}
+
+	#flower4{
+		z-index:1;
+		width: 175px;
+		height: 175px;
+		border: 1px solid black;
+		position: absolute;
+		left: 50%;
+		top: 325px;
+
+	}
+
+
+	#square3{
+	width: 175px;
+		height: 175px;
+		background-image: url(corner1.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+		left: 5%;
+		top: 650px;}
+
+	#square4{
+	width: 175px;
+		height: 175px;
+		background-image: url(corner2.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+		left:30%;
+		top: 650px;}
+
+	#square1{
+		width: 175px;
+		height: 175px;
+		background-image: url(corner3.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+		left:55%;
+		top: 650px;}
+
+	#square2{
+		width: 175px;
+		height: 175px;
+		background-image: url(corner4.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+		left:80%;
+		top: 650px;}
+
+		}
+		#a{
+			font-family: 'Baloo 2', cursive;
+			font-size:70px;
+				}
+		#p{
+		font-family: 'Baloo 2', cursive;
+			font-size:10px;	
+		}
+	body{
+		font-family: 'Baloo 2', cursive;
+		background-color: whitesmoke;
+		
+
+}
+		</style>
+</head>
+<body>
+
+	<a>Move each photo to finish the puzzle!</a>
+	
+
+
+
+	<div id="flower1"></div>
+	<div id="flower2"></div>
+	<div id="flower3"></div>
+	<div id="flower4"></div>
+
+
+
+	<div id="square1"></div>
+	<div id="square2"></div>
+	<div id="square3"></div>
+	<div id="square4"></div>
+
+
+<p>Coding Credits --> Montana!!</p>
+
+
+
+
+
+
+	<script type="text/javascript">
+		
+
+var squareHolder1;
+
+
+var square1 = document.getElementById("square1");
+
+function square1Test (event){
+
+square1.style.position="absolute";
+console.log(event.clientX)
+square1.style.left = event.clientX-87.5 + "px";
+console.log(event.clientY)
+square1.style.top = event.clientY + "px";
+} // end of function//
+
+
+
+square1.addEventListener("click", function moveSquare1 (){
+squareHolder1 = true;
+document.addEventListener("mousemove", square1Test)
+
+
+})
+
+var squareHolder2;
+
+
+var square2 = document.getElementById("square2");
+
+function square2Test (event){
+
+square2.style.position="absolute";
+console.log(event.clientX)
+square2.style.left = event.clientX-87.5 + "px";
+console.log(event.clientY)
+square2.style.top = event.clientY + "px";
+} // end of function//
+
+
+
+square2.addEventListener("click", function moveSquare2 (){
+squareHolder2 = true;
+document.addEventListener("mousemove", square2Test)
+
+
+})
+
+var squareHolder3;
+
+
+var square3 = document.getElementById("square3");
+
+function square3Test (event){
+
+square3.style.position="absolute";
+console.log(event.clientX)
+square3.style.left = event.clientX-87.5 + "px";
+console.log(event.clientY)
+square3.style.top = event.clientY + "px";
+} // end of function//
+
+
+
+square3.addEventListener("click", function moveSquare3 (){
+squareHolder3 = true;
+document.addEventListener("mousemove", square3Test)
+
+
+})
+
+var squareHolder4;
+
+
+var square4 = document.getElementById("square4");
+
+function square4Test (event){
+
+square4.style.position="absolute";
+console.log(event.clientX)
+square4.style.left = event.clientX-87.5 + "px";
+console.log(event.clientY)
+square4.style.top = event.clientY + "px";
+} // end of function//
+
+
+
+square4.addEventListener("click", function moveSquare4 (){
+squareHolder4 = true;
+document.addEventListener("mousemove", square4Test)
+
+
+})
+
+flower1.addEventListener("click", function dropsqaure1 (){
+if (squareHolder1==true) {
+console.log(flower1.style.left)
+
+flower1.appendChild(square1);
+square1.style.position = "relative";
+square1.style.top = "0%"
+square1.style.left = "0%"
+document.removeEventListener("mousemove", square1Test);
+
+}
+if (squareHolder1==true && squareHolder2==true && squareHolder3==true && squareHolder4==true) {
+flower1.style.border = "0px solid black";
+flower2.style.border = "0px solid black"
+flower3.style.border = "0px solid black"
+flower4.style.border = "0px solid black"
+title.style.opacity = "1"
+}
+}
+
+)
+flower2.addEventListener("click", function dropsqaure2 (){
+if (squareHolder2==true) {
+console.log(flower2.style.left)
+
+flower2.appendChild(square2);
+square2.style.position = "relative";
+square2.style.top = "0%"
+square2.style.left = "0%"
+document.removeEventListener("mousemove", square2Test);
+
+}
+if (squareHolder1==true && squareHolder2==true && squareHolder3==true && squareHolder4==true) {
+flower1.style.border = "0px solid black";
+flower2.style.border = "0px solid black"
+flower3.style.border = "0px solid black"
+flower4.style.border = "0px solid black"
+title.style.opacity = "1"
+}
+}
+
+)
+flower3.addEventListener("click", function dropsqaure3 (){
+if (squareHolder3==true) {
+console.log(flower3.style.left)
+
+flower3.appendChild(square3);
+square3.style.position = "relative";
+square3.style.top = "0%"
+square3.style.left = "0%"
+document.removeEventListener("mousemove", square3Test);
+
+}
+if (squareHolder1==true && squareHolder2==true && squareHolder3==true && squareHolder4==true) {
+flower1.style.border = "0px solid black";
+flower2.style.border = "0px solid black"
+flower3.style.border = "0px solid black"
+flower4.style.border = "0px solid black"
+title.style.opacity = "1"
+}
+}
+
+)
+flower4.addEventListener("click", function dropsqaure4 (){
+if (squareHolder4==true) {
+console.log(flower4.style.left)
+
+flower4.appendChild(square4);
+square4.style.position = "relative";
+square4.style.top = "0%"
+square4.style.left = "0%"
+document.removeEventListener("mousemove", square4Test);
+
+}
+if (squareHolder1==true && squareHolder2==true && squareHolder3==true && squareHolder4==true) {
+flower1.style.border = "0px solid black";
+flower2.style.border = "0px solid black"
+flower3.style.border = "0px solid black"
+flower4.style.border = "0px solid black"
+title.style.opacity = "1"
+}
+}
+
+)
+
+	</script>
+</body>
+</html>

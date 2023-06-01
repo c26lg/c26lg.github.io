@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>breakfast generator</title>
+	<style type="text/css">
+		
+		#text{
+			font-size: 75px;
+		}
+
+		p{
+			font-size: 50px;
+		}
+		#square{
+			width: 500px;
+			height: 500px;
+			position: absolute;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<p>Click the screen for random pictures from my camera rool</p>
+		<div id="text"></div>
+		<div id="square" style="background-image: url();"></div>
+	</center>
+	<script type="text/javascript">
+		var artwork = [picture urls]
+
+			document.addEventListener("click", function(){
+				var number = Math.round(Math.random()*9)
+				console.log(number)
+
+				square.style.backgroundImage = "url(./array/" + artwork[number]+")";
+
+
+			})
+	</script>
+	<div id="forest-ext-shadow-host">
+		#shadow-root (open)
+		<head></head>
+		<div id="root"></div>
+	</div>
+
+</body>
+</html>
